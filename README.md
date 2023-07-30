@@ -21,10 +21,8 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<a href="https://www.loom.com/share/8164e83b651c476e8d4f3d0514531d5f">
-
 <img style="max-width:300px;" src="https://github.com/Fanuel-D/BeReal/blob/main/BeReal.gif">
-</a>
+
 
 
 ## Notes
