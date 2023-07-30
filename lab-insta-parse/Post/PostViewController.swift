@@ -16,10 +16,11 @@ import ParseSwift
 class PostViewController: UIViewController {
 
     // MARK: Outlets
-    @IBOutlet weak var shareButton: UIBarButtonItem!
+  
     @IBOutlet weak var captionTextField: UITextField!
     @IBOutlet weak var previewImageView: UIImageView!
 
+    @IBOutlet weak var shareButton: UIButton!
     private var pickedImage: UIImage?
 
     override func viewDidLoad() {
