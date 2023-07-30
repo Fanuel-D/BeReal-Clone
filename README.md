@@ -21,6 +21,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
+![Alt Text](https://github.com/FdD1223/prework-repo/blob/c7cf391ce2237d8f1d2f4e7b88671e85a4db1208/DemoGif.gif)
 ![Alt Text](https://github.com/Fanuel-D/BeReal/blob/main/BeReal.gif)
 
 
