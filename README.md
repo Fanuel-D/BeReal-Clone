@@ -21,7 +21,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src="https://github.com/Fanuel-D/BeReal/blob/main/BeReal.gif" width="500" height="500" />
+<img src="https://github.com/Fanuel-D/BeReal/blob/main/BeReal.gif" width="600" height="500" />
 
 
 
