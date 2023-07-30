@@ -1,8 +1,8 @@
 //
 //  FeedViewController.swift
-//  lab-insta-parse
+// 
 //
-//  Created by Charlie Hieger on 11/1/22.
+//  Created by Fanuel Dana on 11/1/22.
 //
 
 import UIKit

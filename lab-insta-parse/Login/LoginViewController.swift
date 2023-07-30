@@ -1,6 +1,6 @@
 //
 //  LoginViewController.swift
-//  lab-insta-parse
+// 
 //
 
 //

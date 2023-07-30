@@ -2,7 +2,7 @@
 //  DateFormatter+Extensions.swift
 //  lab-insta-parse
 //
-//  Created by Charlie Hieger on 11/3/22.
+//  Created by Fanuel Dana on 11/3/22.
 //
 
 import Foundation
