@@ -25,6 +25,7 @@ class PostViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
 
     @IBAction func onPickedImageTapped(_ sender: UIBarButtonItem) {

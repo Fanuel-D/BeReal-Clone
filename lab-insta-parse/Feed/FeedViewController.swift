@@ -10,6 +10,9 @@ import UIKit
 // TODO: P1 1 - Import Parse Swift
 import ParseSwift
 
+
+
+
 class FeedViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
@@ -28,9 +31,11 @@ class FeedViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.allowsSelection = false
+        scheduleRandomNotifications()
 
         tableView.refreshControl = refreshControl
         refreshControl.addTarget(self, action: #selector(onPullToRefresh), for: .valueChanged)
+        
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -39,6 +44,41 @@ class FeedViewController: UIViewController {
         queryPosts()
     }
 
+    
+
+        func scheduleRandomNotifications() {
+            let notificationTimes: [TimeInterval] = [3600, 7200, 10800, 14400, 18000] // Example: 1 hour, 2 hours, 3 hours, 4 hours, 5 hours
+
+            for timeInterval in notificationTimes {
+                // Create a notification content
+                let content = UNMutableNotificationContent()
+                content.title = "Be Real"
+                content.body = "Hey there! Be yourself and keep it real."
+
+                // Create a trigger with the custom time interval
+                let trigger = UNTimeIntervalNotificationTrigger(timeInterval: timeInterval, repeats: false)
+
+                // Create a unique identifier for the notification request
+                let identifier = UUID().uuidString
+
+                // Create the notification request
+                let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
+
+                // Schedule the notification
+                UNUserNotificationCenter.current().add(request) { (error) in
+                    if let error = error {
+                        print("Error scheduling notification: \(error.localizedDescription)")
+                    } else {
+                        print("Notification scheduled successfully")
+                    }
+                }
+            }
+        }
+    
+
+    
+    
+    
     private func queryPosts(completion: (() -> Void)? = nil) {
         // TODO: Pt 1 - Query Posts
         // https://github.com/parse-community/Parse-Swift/blob/3d4bb13acd7496a49b259e541928ad493219d363/ParseSwift.playground/Pages/2%20-%20Finding%20Objects.xcplaygroundpage/Contents.swift#L66

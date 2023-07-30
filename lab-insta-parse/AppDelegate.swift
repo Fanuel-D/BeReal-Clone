@@ -6,23 +6,32 @@
 //
 
 import UIKit
+import UserNotifications
 
 // TODO: Pt 1 - Import Parse Swift
 import ParseSwift
 
+
+
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
 
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
+
+    
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-
-        // TODO: Pt 1 - Initialize Parse SDK
-
-        // Add the following values from your Parse server.
-        // For back4app hosted Parse servers:
-        //   - App Settings tab -> Security & Keys -> App Keys -> applicationId + clientKey
-        //   - App Settings tab -> App Management -> Parse API Address
-        // https://github.com/parse-community/Parse-Swift/blob/main/ParseSwift.playground/Sources/Common.swift
+       
+        UNUserNotificationCenter.current().delegate = self
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { (granted, error) in
+            if granted {
+                print("Notification authorization granted")
+            } else {
+                print("Notification authorization denied")
+            }
+        }
+        application.registerForRemoteNotifications()
+        
+        
         ParseSwift.initialize(applicationId: "19xj6F2mnbVx6HNrTAUt1w7aZzuKLZsvoWGyoC52",
                               clientKey: "FSzU3We7emLP948I7VGaVBGbMEIeywMaoTnArDxj",
                               serverURL: URL(string: "https://parseapi.back4app.com")!)
