@@ -21,7 +21,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-![Alt Text] ("https://github.com/Fanuel-D/BeReal/blob/main/BeReal.gif">)
+![Alt Text] (https://github.com/Fanuel-D/BeReal/blob/main/BeReal.gif)
 
 
 
