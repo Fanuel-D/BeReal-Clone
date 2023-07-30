@@ -6,22 +6,21 @@ Be-Real Clone is an IOS app that enables users to share pictures easily with eac
 
 The following **required** functionality is completed:
 
-- [X] User can launch camera to take photo instead of photo library
-- [X] User session persists when application is closed and relaunched
+- [X] User can launch camera to take photos 
+- [X] User session persists when the application is closed and relaunched
 - [X] Users are able to log out and return to sign in page
 - [x] Users are NOT able to see other photos until they upload their own	
  
 The following **optional** features are implemented:
 
-- [X] User receive notifcation when it is time to post
-- [ ] Users can make comments and view comments in posts	
+- [X] User receives notification when it is time to post
+- [ ] Users can make comments and view comments on posts	
 
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-![Alt Text](https://github.com/FdD1223/prework-repo/blob/c7cf391ce2237d8f1d2f4e7b88671e85a4db1208/DemoGif.gif)
 ![Alt Text](https://github.com/Fanuel-D/BeReal/blob/main/BeReal.gif)
 
 
